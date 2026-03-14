@@ -17,4 +17,9 @@ $(TWEAK_NAME)_FRAMEWORKS = UIKit Foundation SystemConfiguration
 $(TWEAK_NAME)_CFLAGS = -fobjc-arc -DTWEAK_VERSION=$(PACKAGE_VERSION)
 $(TWEAK_NAME)_FILES = $(wildcard *.x Utils/*.m)
 
+TWEAK_NAME += YTHoldForSpeed
+YTHoldForSpeed_FILES = Tweaks/YTHoldForSpeed/YTHFSTweak.x Tweaks/YTHoldForSpeed/YTHFSSettings.x Tweaks/YTHoldForSpeed/YTHFSPrefsManager.m
+YTHoldForSpeed_FRAMEWORKS = UIKit Foundation
+YTHoldForSpeed_CFLAGS = -fobjc-arc
+
 include $(THEOS_MAKE_PATH)/tweak.mk
