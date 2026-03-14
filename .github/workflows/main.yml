@@ -293,7 +293,7 @@ jobs:
         env:
           THEOS: ${{ github.workspace }}/theos
 
-     - name: Inject tweaks into IPA
+      - name: Inject tweaks into IPA
         run: |
           tweaks="ytplus.deb OpenYoutubeSafariExtension.appex main/Bundles/YTHoldForSpeed.dylib main/Bundles/YTHoldForSpeed.bundle"
 
